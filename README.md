@@ -1,6 +1,9 @@
 # Loan Prediction Analysis Using Python
 This project aims to predict loan approval status based on various features using Python programming language. It involves exploratory data analysis (EDA), data preprocessing, machine learning, model building, and evaluation.
 ## Overview
+The dataset consists of 614 entries and 13 columns.
+Features include both numerical and categorical variables.
+Notable features: Gender, Married, Dependents, Education, Self_Employed, ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term, Credit_History, Property_Area, and Loan_Status
 
 The loan prediction analysis project involves the following steps:
 
@@ -14,16 +17,21 @@ The dataset used in this project contains information about loan applicants, inc
 
 The repository contains the following files:
 
-- `loan_prediction_analysis.ipynb`: Jupyter Notebook containing the Python code for data analysis, preprocessing, and model building.
-- `loan_prediction_analysis.py`: Python script equivalent of the Jupyter Notebook for running the project code in a command-line environment.
-- `loan_dataset.csv`: Dataset file containing the loan data used for analysis and modeling.
-- `README.md`: This README file providing an overview of the project and instructions for running the code.
-## Dependencies
+- `loanpredictionanalysis.ipynb`: Jupyter Notebook containing the Python code for data analysis, preprocessing, and model building.
+- `loan_dataset.xls`: Dataset file containing the loan data used for analysis and modeling.
 
-Ensure you have the following Python libraries installed:
+## Identified Issues:
 
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
+Non-normalized distribution of numerical features.
+Missing values in multiple columns.
+
+## Data Cleaning
+### Missing Values:
+Missing values handled by imputing mode for categorical features and mean for numerical features.
+Columns with missing values: Gender, Married, Dependents, Self_Employed, LoanAmount, Loan_Amount_Term, and Credit_History.
+
+## Data Preprocessing and Transformation:
+### Categorical Encoding:Categorical variables encoded using one-hot encoding to convert them into numerical representations.
+
+## Conclusion:
+This analysis provides valuable insights into the loan dataset, addressing issues such as missing values and data distribution. The trained logistic regression model demonstrates promising performance in predicting loan approval status. Further exploration and refinement may enhance model accuracy and contribute to more informed decision-making in lending institutions.
