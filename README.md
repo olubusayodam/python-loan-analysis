@@ -1,5 +1,5 @@
 # Loan Prediction Analysis Using Python
-This project aims to predict loan approval status based on various features using Python programming language. It involves exploratory data analysis (EDA), data preprocessing, machine learning model building, and evaluation.
+This project aims to predict loan approval status based on various features using Python programming language. It involves exploratory data analysis (EDA), data preprocessing, machine learning, model building, and evaluation.
 ## Overview
 
 The loan prediction analysis project involves the following steps:
